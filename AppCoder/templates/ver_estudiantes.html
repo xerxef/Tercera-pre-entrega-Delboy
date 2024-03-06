@@ -18,7 +18,9 @@
     <p>{{mensaje}}</p>
     
     {% for estudiante in resultados %}
-        <p>{{estudiante.nombre}} {{estudiante.apellido}}</p>
+        <p>Nombre Completo: {{estudiante.nombre}} {{estudiante.apellido}}</p>
+        <p>Mail: {{estudiante.email}}</p>
+        <p>Edad: {{estudiante.edad}} años</p>
     {% endfor %}
 </div>
 {% endblock %}
